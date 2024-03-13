@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
@@ -33,7 +34,8 @@ namespace WebApplication1.Controllers
 
         private readonly long _fileSizeLimit = 2097162; // 2,097,162
         private readonly string[] _permittedExtensions = { ".txt", ".csv" };
-        private readonly string _targetFilePath = "\\files";
+        private readonly string   _targetFilePath = AppContext.BaseDirectory + @"/Files";  // Files folder in web app root
+        
         public string Result { get; private set; }
 
         [HttpGet]

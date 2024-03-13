@@ -3,7 +3,7 @@
 This Visual Studio 2022, ASP.NET MVC 6.0 web app is an experiment to try out code that lets users upload files to the server.
 
 
-## Refrences
+## References
 
 [How To - File Upload Button](https://www.w3schools.com/howto/howto_html_file_upload_button.asp). W3Schools.
 
