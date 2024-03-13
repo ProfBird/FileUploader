@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using WebApplication1;
 using WebApplication1.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -40,5 +41,12 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+// create a file upload folder in the web root if it doesn't already exist
+var fileUploadFolder = Path.Combine(app.Environment.WebRootPath, FileHelpers.UPLOAD_FOLDER);
+if (!Directory.Exists(fileUploadFolder))
+{
+    Directory.CreateDirectory(fileUploadFolder);
+}
 
 app.Run();

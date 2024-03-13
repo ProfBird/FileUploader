@@ -8,10 +8,12 @@ namespace WebApplication1.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly string _targetFilePath;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment webHostEnv)
         {
             _logger = logger;
+            _targetFilePath = webHostEnv.WebRootPath + "/" + FileHelpers.UPLOAD_FOLDER;  // Files folder in wwwRoot
         }
 
         public IActionResult Index()
@@ -34,8 +36,6 @@ namespace WebApplication1.Controllers
 
         private readonly long _fileSizeLimit = 2097162; // 2,097,162
         private readonly string[] _permittedExtensions = { ".txt", ".csv" };
-        private readonly string   _targetFilePath = AppContext.BaseDirectory + @"/Files";  // Files folder in web app root
-        
         public string Result { get; private set; }
 
         [HttpGet]
