@@ -7,7 +7,7 @@ This Visual Studio 2022, ASP.NET MVC 6.0 web app is an experiment to try out cod
 This is not necessarily a more secure location for the files, but it is a more convenient location since it is a known location
 on all servers.
 
-## Refrences
+## References
 
 [How To - File Upload Button](https://www.w3schools.com/howto/howto_html_file_upload_button.asp). W3Schools.
 
