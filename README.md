@@ -1,6 +1,6 @@
 # FileUploadExperiment
 
-This Visual Studio 2022, ASP.NET MVC 6.0 web app is an experiment to try out code that lets users upload files to the server.
+This Visual Studio 2022, ASP.NET MVC 6.0 web app is an experiment to try out code that lets users upload files to the server. This project is set up to use SQL Server LocalDb.
 
 ## Revisions
 3/13/24: Changed the file upload location from /Files in the root of the server drive to wwwroot/Files in the root of the web app. 
