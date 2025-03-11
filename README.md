@@ -1,6 +1,6 @@
 # FileUploadExperiment
 
-This Visual Studio 2022, ASP.NET MVC 6.0 web app is an experiment to try out code that lets users upload files to the server. This project is set up to use SQL Server LocalDb. This code is based on the article by Storm (2024), [file-ploads on GitHub](https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/mvc/models/file-uploads/samples/), which is under an [MIT open source license](https://en.wikipedia.org/wiki/MIT_License).
+This Visual Studio 2022, ASP.NET MVC 6.0 web app is an experiment to try out code that lets users upload files to the server. This project is set up to use SQL Server LocalDb. The code was modified from code accompanying an article by Storm (2024), [file-uploads on GitHub](https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/mvc/models/file-uploads/samples/), which is under an [MIT open source license](https://en.wikipedia.org/wiki/MIT_License).
 
 ## Revisions
 3/13/24: Changed the file upload location from /Files in the root of the server drive to wwwroot/Files in the root of the web app. 
